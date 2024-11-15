@@ -9,9 +9,11 @@
 <GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="dev.lpa.udemy430events.HelloController"
           alignment="CENTER" hgap="10" vgap="10">
 
-    <TextField fx:id="nameField" text="Enter name" GridPane.rowIndex="0" GridPane.columnIndex="0"
-               GridPane.columnSpan="2" onMouseClicked="#onEnterEmptyTextField"/>
+    <TextField fx:id="nameField" text="" GridPane.rowIndex="0" GridPane.columnIndex="0"
+               GridPane.columnSpan="2" onKeyReleased="#handleKeyReleased"/>
 
-    <Button text="Say Hello" GridPane.rowIndex="1" GridPane.columnIndex="0"
-            onAction="#onHelloButtonClick"/>
+    <Button fx:id="helloButton" text="Say Hello" GridPane.rowIndex="1" GridPane.columnIndex="0"
+            onAction="#onButtonClicked"/>
+    <Button fx:id="byeButton" text="Say Bye" GridPane.rowIndex="1" GridPane.columnIndex="1"
+            onAction="#onButtonClicked"/>
 </GridPane>
