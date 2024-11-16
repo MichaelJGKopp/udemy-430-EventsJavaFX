@@ -38,6 +38,13 @@ public class HelloController {
       System.out.println("Bye, " + nameField.getText());
     }
 
+//    // Simulate hanging UI thread
+//    try {
+//      Thread.sleep(10_000);
+//    } catch (InterruptedException ex) {
+//      ex.printStackTrace();
+//    }
+
     Runnable task = new Runnable() {
       @Override
       public void run() {
